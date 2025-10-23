@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<title>Dmitry Kollen — AI инженер, Python-разработчик, CV/LLM, бэкенд, автоматизация</title>
+<meta name="description" content="Портфолио Дмитрия Коллена: AI инженерия (YOLO/ALPR, LLM), Python/Django/FastAPI, парсинг и автоматизация, Docker, CI/CD, PostgreSQL. Проекты, услуги и контакты.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+
+<!-- ⚠️ Если без собственного домена, каноникал — на GitHub Pages -->
+<link rel="canonical" href="https://YOUR_USERNAME.github.io/YOUR_REPO/">
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta name="theme-color" content="#07100f">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/">
+<meta property="og:title" content="Dmitry Kollen — AI инженер и Python-разработчик">
+<meta property="og:description" content="Компьютерное зрение, LLM-интеграции, бэкенд на Django/FastAPI, парсинг и автоматизация.">
+<meta property="og:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dmitry Kollen — AI инженер и Python-разработчик">
+<meta name="twitter:description" content="Компьютерное зрение, LLM, бэкенд, парсинг и автоматизация.">
+<meta name="twitter:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/og-image.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+/* ——— стили (те же, что мы собирали под SEO) ——— */
+:root{--bg-900:#030405;--bg-800:#07100f;--neon:#00ffd0;--lime:#aaff66;--muted:#9aa2aa;--ink:#e9f2ef;--glow:rgba(0,255,208,.18);--card:rgba(255,255,255,.02);--speed:36s}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:var(--ink);background:linear-gradient(180deg,var(--bg-900) 0%,var(--bg-800) 60%);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;line-height:1.55;
+cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><polygon points='0,0 0,20 5,15 10,22 12,21 7,14 14,14' fill='%2300ffd0'/></svg>") 0 0,auto}
+a,button,.btn{cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><polygon points='0,0 0,20 5,15 10,22 12,21 7,14 14,14' fill='%23aaff66'/></svg>") 0 0,pointer}
+#tsparticles{position:fixed;inset:0;z-index:-4}
+.noise{position:fixed;inset:0;z-index:-3;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='f'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23f)' opacity='0.07'/></svg>");opacity:.06;mix-blend-mode:overlay}
+.grid-overlay{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(90deg,rgba(0,255,208,.03) 1px,transparent 1px),linear-gradient(0deg,rgba(160,255,100,.02) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(1200px 600px at 50% 20%,black 40%,transparent 85%);opacity:.5}
+.wrap{max-width:1100px;margin:0 auto;padding:36px 26px 80px;position:relative;z-index:2}
+header.header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,var(--neon),#00d8b0);box-shadow:0 0 12px var(--glow),0 0 28px rgba(0,255,208,.06)}
+.brand strong{font-family:"JetBrains Mono",monospace;letter-spacing:.6px}
+nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}nav a:hover{color:var(--neon);text-decoration:underline 1px rgba(0,255,208,.12)}
+.hero{padding:78px 0 36px}
+.type-intro{font-family:"JetBrains Mono",monospace;font-size:clamp(16px,3vw,22px);color:var(--muted);margin-bottom:22px;display:flex;align-items:center;flex-wrap:wrap}
+.prompt{color:var(--neon);margin-right:8px;text-shadow:0 0 8px rgba(0,255,208,.4)}
+.typed-text{color:var(--neon)}.cursor{color:var(--lime);animation:blink .9s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.kicker{display:inline-block;padding:6px 10px;border-radius:8px;font-size:12px;color:var(--muted);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.03)}
+h1.title{margin-top:18px;font-size:clamp(30px,6vw,64px);line-height:1.03;font-weight:700;color:var(--ink);font-family:"JetBrains Mono",monospace;text-shadow:0 0 18px rgba(0,255,208,.06),0 10px 30px rgba(0,0,0,.6)}
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;inset:0;pointer-events:none;opacity:.8;clip-path:rect(0,9999px,0,0)}
+.glitch::before{color:var(--neon);transform:translate(2px,-1px);mix-blend-mode:screen;opacity:.7}
+.glitch::after{color:var(--lime);transform:translate(-2px,1px);mix-blend-mode:screen;opacity:.5}
+@keyframes glitch-anim{0%{clip-path:rect(0,9999px,0,0)}10%{clip-path:rect(10px,9999px,40px,0)}20%{clip-path:rect(20px,9999px,10px,0)}30%{clip-path:rect(0,9999px,60px,0)}40%{clip-path:rect(30px,9999px,20px,0)}50%{clip-path:rect(10px,9999px,50px,0)}60%{clip-path:rect(0,9999px,20px,0)}70%{clip-path:rect(25px,9999px,40px,0)}80%{clip-path:rect(0,9999px,10px,0)}90%{clip-path:rect(5px,9999px,60px,0)}100%{clip-path:rect(0,9999px,0,0)}}
+.glitch[data-enabled="true"]::before,.glitch[data-enabled="true"]::after{animation:glitch-anim 3s linear infinite}
+.lead{margin-top:12px;color:var(--muted);max-width:70ch;font-size:16px}
+.actions{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:10px;background:linear-gradient(180deg,var(--neon),#00d8b0);color:#041612;font-weight:700;border:none;box-shadow:0 10px 30px rgba(0,255,208,.08)}
+.btn.ghost{background:transparent;color:var(--neon);border:1px solid rgba(0,255,208,.12)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:28px}
+.col-6{grid-column:span 6}.col-4{grid-column:span 4}.col-12{grid-column:span 12}
+@media(max-width:900px){.col-6,.col-4{grid-column:span 12}}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.06);transition:transform .12s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:0 0 0 8px rgba(0,255,208,.06)}
+.card h3{margin:0 0 8px;color:var(--neon);font-family:"JetBrains Mono"}
+.meta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-family:"JetBrains Mono";background:var(--neon);color:#071510;padding:6px 8px;border-radius:999px;font-weight:700}
+.tag.alt{background:var(--lime);color:#071510}
+footer{margin-top:50px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:40px}
+.services{margin-top:56px}
+.svc-kicker{color:var(--neon);font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.9}
+.svc-title{margin:6px 0 14px 0;font-size:clamp(22px,4.5vw,40px);font-weight:800;line-height:1.1;color:var(--ink);text-shadow:0 0 18px rgba(0,255,208,.06)}
+.svc-grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+.svc-card{grid-column:span 4;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:18px;transition:transform .12s,box-shadow .2s,border-color .2s;box-shadow:0 0 0 0 rgba(0,255,208,0)}
+.svc-card:hover{transform:translateY(-4px);border-color:rgba(0,255,208,.25);box-shadow:0 0 0 6px rgba(0,255,208,.12)}
+.svc-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:12px;margin-bottom:10px;background:rgba(0,255,208,.06);box-shadow:inset 0 0 20px rgba(0,255,208,.06)}
+.svc-card h3{margin:2px 0 6px 0;font-size:18px;color:var(--ink)}.svc-card p{margin:0;color:var(--muted);font-size:14px;max-width:60ch}
+@media(max-width:1000px){.svc-card{grid-column:span 6}}@media(max-width:700px){.svc-card{grid-column:span 12}}
+.tech-marquee{margin:18px 0 28px;overflow:hidden;border-radius:10px;border:1px solid rgba(255,255,255,.04);background:linear-gradient(180deg,rgba(255,255,255,.01),rgba(255,255,255,.005));padding:10px 6px}
+.marquee-track{display:flex;gap:22px;align-items:center;will-change:transform;animation:marquee var(--speed) linear infinite}
+.marquee-track img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,255,208,.06));transition:transform .12s}
+.marquee-track img:hover{transform:translateY(-6px) scale(1.06)}
+.marquee-inner{display:flex;gap:22px;align-items:center}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+#boot-screen{position:fixed;inset:0;z-index:9999;background:#020303;color:var(--neon);font-family:"JetBrains Mono",monospace;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:.5px;text-shadow:0 0 10px rgba(0,255,208,.4)}
+#boot-text{white-space:pre;padding:24px}
+</style>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+<canvas id="tsparticles" aria-hidden="true"></canvas>
+<div class="noise" aria-hidden="true"></div>
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<div id="boot-screen" role="dialog" aria-live="polite">
+  <pre id="boot-text">Initializing DmitryOS v1.0...
+Loading neural modules [▒▒▒▒▒▒▒▒▒▒] 0%</pre>
+</div>
+
+<div class="wrap">
+  <header class="header" role="banner">
+    <a class="brand" href="./" aria-label="На главную">
+      <span class="logo" aria-hidden="true"></span><strong itemprop="name">Dmitry Kollen</strong>
+    </a>
+    <nav aria-label="Навигация">
+      <a href="#services">Услуги</a>
+      <a href="#projects">Проекты</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main" role="main">
+    <section class="hero" data-aos="fade-up">
+      <div class="type-intro">
+        <span class="prompt" aria-hidden="true">&gt;</span> Привет, я&nbsp;<span id="typed" class="typed-text"></span><span class="cursor">_</span>
+      </div>
+      <p class="kicker">AI Engineer • Automation • CV</p>
+      <h1 class="title">Я строю системы, <span class="glitch" data-text="которые думают" data-enabled="true">которые думают</span>.</h1>
+      <p class="lead">Компьютерное зрение (YOLO/ALPR), интеграции LLM, бэкенд на Django/FastAPI, парсинг и автоматизация, Docker и CI/CD. Production-ready.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">→ Проекты</a>
+        <a class="btn ghost" href="#contact">Связаться</a>
+      </div>
+    </section>
+
+    <section class="tech-marquee" aria-label="Технологии" data-aos="fade-up" data-aos-delay="100">
+      <div class="marquee-track">
+        <div class="marquee-inner" role="list">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yolov5/yolov5-original.svg" alt="YOLO">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx">
+          <!-- duplicate -->
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yolov5/yolov5-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="">
+          <img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services" data-aos="fade-up" aria-label="Услуги">
+      <div class="svc-kicker">Мои услуги</div>
+      <h2 class="svc-title">Что я делаю</h2>
+      <div class="svc-grid">
+        <article class="svc-card">
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="6" y="8" width="36" height="24" rx="3" stroke="var(--neon)" stroke-width="2"/>
+              <path d="M18 36h12M24 32v4" stroke="var(--neon)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="20" r="8" stroke="var(--neon)" stroke-width="2" opacity=".8"/>
+              <path d="M24 12v16M16 20h16" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+            </svg>
+          </div>
+          <h3>AI инженерия</h3>
+          <p>CV-пайплайны (YOLO/ALPR), интеграции LLM, метрики и наблюдаемость.</p>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <path d="M24 6l16 8-16 8-16-8 16-8z" stroke="var(--neon)" stroke-width="2" />
+              <path d="M8 14v16l16 8 16-8V14" stroke="var(--neon)" stroke-width="2"/>
+              <path d="M24 22v16" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+            </svg>
+          </div>
+          <h3>Бэкенд</h3>
+          <p>Django / FastAPI, PostgreSQL, Celery/Redis, Docker, CI/CD.</p>
+        </article>
+
+        <article class="svc-card">
+          <div class="svc-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="6" stroke="var(--neon)" stroke-width="2"/>
+              <path d="M24 12v4M24 32v4M12 24h4M32 24h4M16 16l3 3M29 29l3 3M16 32l3-3M29 19l3-3"
+                stroke="var(--lime)" stroke-width="2" stroke-linecap="round" opacity=".9"/>
+              <circle cx="24" cy="24" r="12" stroke="var(--neon)" stroke-width="2" opacity=".6"/>
+            </svg>
+          </div>
+          <h3>Автоматизация и парсинг</h3>
+          <p>Selenium/BS4, антибот-техники, ETL-конвейеры.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up" aria-label="Проекты">
+      <h2 style="margin:6px 0 14px 0;font-size:clamp(22px,4.5vw,40px)">Проекты</h2>
+      <div class="grid">
+        <article class="card col-6"><h3>CamChecker — ALPR</h3><p style="color:var(--muted)">FastAPI + YOLOv8 + Nomeroff-Net: распознавание номеров в реальном времени.</p><div class="meta"><span class="tag">FastAPI</span><span class="tag alt">YOLOv8</span></div></article>
+        <article class="card col-6"><h3>Wordstat Analyzer</h3><p style="color:var(--muted)">Django + Celery: сбор и кластеризация ключей, Sheets-интеграция.</p><div class="meta"><span class="tag">Django</span><span class="tag alt">SEO</span></div></article>
+        <article class="card col-6"><h3>Parsers & Automation</h3><p style="color:var(--muted)">Selenium, антибот-приёмы, единый фреймворк парсеров.</p><div class="meta"><span class="tag">Selenium</span><span class="tag alt">ETL</span></div></article>
+        <article class="card col-6"><h3>Yandex Cloud Assistant CLI</h3><p style="color:var(--muted)">CLI для ассистентов с web-search, валидацией и обработкой ошибок.</p><div class="meta"><span class="tag">CLI</span><span class="tag alt">Cloud</span></div></article>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up" aria-label="Контакты">
+      <h2 style="margin:6px 0 14px 0;font-size:clamp(22px,4.5vw,40px)">Контакты</h2>
+      <div class="card col-12"><p style="color:var(--muted)">Telegram / GitHub / Email — по запросу. Доступен для удалённых контрактов и поддержки.</p></div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">© <span id="year"></span> Dmitry Kollen</footer>
+</div>
+
+<noscript><style>#tsparticles,#boot-screen{display:none!important}</style></noscript>
+
+<!-- Defer: AOS / tsParticles / Typed -->
+<script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({once:true, duration:700});
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  new Typed("#typed", {
+    strings: ["Дмитрий","инженер","программист","разработчик ИИ","создатель систем"],
+    typeSpeed:90, backSpeed:45, backDelay:1600, loop:true, showCursor:false
+  });
+
+  tsParticles.load("tsparticles", {
+    fpsLimit:60, background:{color:{value:"transparent"}},
+    interactivity:{detectsOn:"canvas",events:{onHover:{enable:false},onClick:{enable:false},resize:true}},
+    particles:{
+      number:{value:120,density:{enable:true,value_area:900}},
+      color:{value:["#00ffd0","#9eff55","#66ffb3"]},
+      shape:{type:"circle"},
+      opacity:{value:0.7,random:{enable:true,minimumValue:0.12},anim:{enable:true,speed:0.4,opacity_min:0.12,sync:false}},
+      size:{value:{min:0.6,max:2.5},random:true},
+      move:{enable:true,speed:0.8,random:true,straight:false,outModes:"out"},
+      links:{enable:true,distance:140,color:"#00ffd0",opacity:0.08,width:1}
+    }, detectRetina:true
+  });
+
+  const lines=["Initializing DmitryOS v1.0...","Loading neural modules [████▒▒▒▒▒▒] 40%","Calibrating perception layers...","Linking parsers & CV pipelines...","Boot complete. Welcome back, Dmitry."];
+  let i=0; const el=document.getElementById("boot-text"); const screen=document.getElementById("boot-screen");
+  const tick=()=>{el.textContent=lines[i]; i++; if(i<lines.length){setTimeout(tick,800)}else{setTimeout(()=>{screen.style.transition="opacity .8s ease";screen.style.opacity=0;setTimeout(()=>screen.remove(),800)},700)}};
+  setTimeout(tick,500);
+});
+</script>
+</body>
+</html>
