@@ -1,0 +1,30 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({once:true, duration:700});
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  new Typed("#typed", {
+    strings: ["Дмитрий","инженер","программист","разработчик ИИ","создатель систем"],
+    typeSpeed:90, backSpeed:45, backDelay:1600, loop:true, showCursor:false
+  });
+
+  tsParticles.load("tsparticles", {
+    fpsLimit:60, background:{color:{value:"transparent"}},
+    interactivity:{detectsOn:"canvas",events:{onHover:{enable:false},onClick:{enable:false},resize:true}},
+    particles:{
+      number:{value:120,density:{enable:true,value_area:900}},
+      color:{value:["#00ffd0","#9eff55","#66ffb3"]},
+      shape:{type:"circle"},
+      opacity:{value:0.7,random:{enable:true,minimumValue:0.12},anim:{enable:true,speed:0.4,opacity_min:0.12,sync:false}},
+      size:{value:{min:0.6,max:2.5},random:true},
+      move:{enable:true,speed:0.8,random:true,straight:false,outModes:"out"},
+      links:{enable:true,distance:140,color:"#00ffd0",opacity:0.08,width:1}
+    }, detectRetina:true
+  });
+
+  const lines=["Initializing DmitryOS v1.0...","Loading neural modules [████▒▒▒▒▒▒] 40%","Calibrating perception layers...","Linking parsers & CV pipelines...","Boot complete. Welcome back, Dmitry."];
+  let i=0; const el=document.getElementById("boot-text"); const screen=document.getElementById("boot-screen");
+  const tick=()=>{el.textContent=lines[i]; i++; if(i<lines.length){setTimeout(tick,800)}else{setTimeout(()=>{screen.style.transition="opacity .8s ease";screen.style.opacity=0;setTimeout(()=>screen.remove(),800)},700)}};
+  setTimeout(tick,500);
+});
+</script>

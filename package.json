@@ -1,0 +1,12 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website with modular components",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && python -m http.server 8000"
+  },
+  "keywords": ["portfolio", "html", "components"],
+  "author": "Dmitry Kollen",
+  "license": "MIT"
+}

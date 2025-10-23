@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<title>Dmitry Kollen — AI инженер, Python-разработчик, CV/LLM, бэкенд, автоматизация</title>
+<meta name="description" content="Портфолио Дмитрия Коллена: AI инженерия (YOLO/ALPR, LLM), Python/Django/FastAPI, парсинг и автоматизация, Docker, CI/CD, PostgreSQL. Проекты, услуги и контакты.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+
+<!-- ⚠️ Если без собственного домена, каноникал — на GitHub Pages -->
+<link rel="canonical" href="https://YOUR_USERNAME.github.io/YOUR_REPO/">
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<meta name="theme-color" content="#07100f">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://YOUR_USERNAME.github.io/YOUR_REPO/">
+<meta property="og:title" content="Dmitry Kollen — AI инженер и Python-разработчик">
+<meta property="og:description" content="Компьютерное зрение, LLM-интеграции, бэкенд на Django/FastAPI, парсинг и автоматизация.">
+<meta property="og:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dmitry Kollen — AI инженер и Python-разработчик">
+<meta name="twitter:description" content="Компьютерное зрение, LLM, бэкенд, парсинг и автоматизация.">
+<meta name="twitter:image" content="https://YOUR_USERNAME.github.io/YOUR_REPO/og-image.jpg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+
+<!-- AOS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+/* ——— стили (те же, что мы собирали под SEO) ——— */
+:root{--bg-900:#030405;--bg-800:#07100f;--neon:#00ffd0;--lime:#aaff66;--muted:#9aa2aa;--ink:#e9f2ef;--glow:rgba(0,255,208,.18);--card:rgba(255,255,255,.02);--speed:36s}
+*{box-sizing:border-box}html,body{height:100%}
+body{margin:0;font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:var(--ink);background:linear-gradient(180deg,var(--bg-900) 0%,var(--bg-800) 60%);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;line-height:1.55;
+cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><polygon points='0,0 0,20 5,15 10,22 12,21 7,14 14,14' fill='%2300ffd0'/></svg>") 0 0,auto}
+a,button,.btn{cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><polygon points='0,0 0,20 5,15 10,22 12,21 7,14 14,14' fill='%23aaff66'/></svg>") 0 0,pointer}
+#tsparticles{position:fixed;inset:0;z-index:-4}
+.noise{position:fixed;inset:0;z-index:-3;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='f'><feTurbulence baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23f)' opacity='0.07'/></svg>");opacity:.06;mix-blend-mode:overlay}
+.grid-overlay{position:fixed;inset:0;z-index:-2;pointer-events:none;background:linear-gradient(90deg,rgba(0,255,208,.03) 1px,transparent 1px),linear-gradient(0deg,rgba(160,255,100,.02) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(1200px 600px at 50% 20%,black 40%,transparent 85%);opacity:.5}
+.wrap{max-width:1100px;margin:0 auto;padding:36px 26px 80px;position:relative;z-index:2}
+header.header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}.logo{width:14px;height:14px;border-radius:4px;background:linear-gradient(135deg,var(--neon),#00d8b0);box-shadow:0 0 12px var(--glow),0 0 28px rgba(0,255,208,.06)}
+.brand strong{font-family:"JetBrains Mono",monospace;letter-spacing:.6px}
+nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}nav a:hover{color:var(--neon);text-decoration:underline 1px rgba(0,255,208,.12)}
+.hero{padding:78px 0 36px}
+.type-intro{font-family:"JetBrains Mono",monospace;font-size:clamp(16px,3vw,22px);color:var(--muted);margin-bottom:22px;display:flex;align-items:center;flex-wrap:wrap}
+.prompt{color:var(--neon);margin-right:8px;text-shadow:0 0 8px rgba(0,255,208,.4)}
+.typed-text{color:var(--neon)}.cursor{color:var(--lime);animation:blink .9s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+.kicker{display:inline-block;padding:6px 10px;border-radius:8px;font-size:12px;color:var(--muted);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.03)}
+h1.title{margin-top:18px;font-size:clamp(30px,6vw,64px);line-height:1.03;font-weight:700;color:var(--ink);font-family:"JetBrains Mono",monospace;text-shadow:0 0 18px rgba(0,255,208,.06),0 10px 30px rgba(0,0,0,.6)}
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;inset:0;pointer-events:none;opacity:.8;clip-path:rect(0,9999px,0,0)}
+.glitch::before{color:var(--neon);transform:translate(2px,-1px);mix-blend-mode:screen;opacity:.7}
+.glitch::after{color:var(--lime);transform:translate(-2px,1px);mix-blend-mode:screen;opacity:.5}
+@keyframes glitch-anim{0%{clip-path:rect(0,9999px,0,0)}10%{clip-path:rect(10px,9999px,40px,0)}20%{clip-path:rect(20px,9999px,10px,0)}30%{clip-path:rect(0,9999px,60px,0)}40%{clip-path:rect(30px,9999px,20px,0)}50%{clip-path:rect(10px,9999px,50px,0)}60%{clip-path:rect(0,9999px,20px,0)}70%{clip-path:rect(25px,9999px,40px,0)}80%{clip-path:rect(0,9999px,10px,0)}90%{clip-path:rect(5px,9999px,60px,0)}100%{clip-path:rect(0,9999px,0,0)}}
+.glitch[data-enabled="true"]::before,.glitch[data-enabled="true"]::after{animation:glitch-anim 3s linear infinite}
+.lead{margin-top:12px;color:var(--muted);max-width:70ch;font-size:16px}
+.actions{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:10px;background:linear-gradient(180deg,var(--neon),#00d8b0);color:#041612;font-weight:700;border:none;box-shadow:0 10px 30px rgba(0,255,208,.08)}
+.btn.ghost{background:transparent;color:var(--neon);border:1px solid rgba(0,255,208,.12)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:28px}
+.col-6{grid-column:span 6}.col-4{grid-column:span 4}.col-12{grid-column:span 12}
+@media(max-width:900px){.col-6,.col-4{grid-column:span 12}}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border-radius:12px;padding:18px;border:1px solid rgba(255,255,255,.06);transition:transform .12s,box-shadow .2s}
+.card:hover{transform:translateY(-6px);box-shadow:0 0 0 8px rgba(0,255,208,.06)}
+.card h3{margin:0 0 8px;color:var(--neon);font-family:"JetBrains Mono"}
+.meta{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-family:"JetBrains Mono";background:var(--neon);color:#071510;padding:6px 8px;border-radius:999px;font-weight:700}
+.tag.alt{background:var(--lime);color:#071510}
+footer{margin-top:50px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:40px}
+.services{margin-top:56px}
+.svc-kicker{color:var(--neon);font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.9}
+.svc-title{margin:6px 0 14px 0;font-size:clamp(22px,4.5vw,40px);font-weight:800;line-height:1.1;color:var(--ink);text-shadow:0 0 18px rgba(0,255,208,.06)}
+.svc-grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
+.svc-card{grid-column:span 4;background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:18px;transition:transform .12s,box-shadow .2s,border-color .2s;box-shadow:0 0 0 0 rgba(0,255,208,0)}
+.svc-card:hover{transform:translateY(-4px);border-color:rgba(0,255,208,.25);box-shadow:0 0 0 6px rgba(0,255,208,.12)}
+.svc-icon{width:56px;height:56px;display:grid;place-items:center;border-radius:12px;margin-bottom:10px;background:rgba(0,255,208,.06);box-shadow:inset 0 0 20px rgba(0,255,208,.06)}
+.svc-card h3{margin:2px 0 6px 0;font-size:18px;color:var(--ink)}.svc-card p{margin:0;color:var(--muted);font-size:14px;max-width:60ch}
+@media(max-width:1000px){.svc-card{grid-column:span 6}}@media(max-width:700px){.svc-card{grid-column:span 12}}
+.tech-marquee{margin:18px 0 28px;overflow:hidden;border-radius:10px;border:1px solid rgba(255,255,255,.04);background:linear-gradient(180deg,rgba(255,255,255,.01),rgba(255,255,255,.005));padding:10px 6px}
+.marquee-track{display:flex;gap:22px;align-items:center;will-change:transform;animation:marquee var(--speed) linear infinite}
+.marquee-track img{width:44px;height:44px;object-fit:contain;filter:drop-shadow(0 6px 18px rgba(0,255,208,.06));transition:transform .12s}
+.marquee-track img:hover{transform:translateY(-6px) scale(1.06)}
+.marquee-inner{display:flex;gap:22px;align-items:center}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+#boot-screen{position:fixed;inset:0;z-index:9999;background:#020303;color:var(--neon);font-family:"JetBrains Mono",monospace;display:flex;align-items:center;justify-content:center;font-size:15px;letter-spacing:.5px;text-shadow:0 0 10px rgba(0,255,208,.4)}
+#boot-text{white-space:pre;padding:24px}
+.contact-card h3{font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.contact-links .btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.2)}
+.contact-links .btn svg{margin-right:8px;flex-shrink:0}
+.contact-links .btn{font-size:14px;font-weight:500}
+</style>
